@@ -54,11 +54,9 @@ def tweet(iterable, api):
     print("Wooooo the following tweet was just sent: "+tweet_choice) 
     iterable.remove(tweet_choice)
     
-
-    
-#Main function (uncomment if you want this to run automatically)
-"""
-def __main__:
+   
+#running this automatically
+def main():
     api=integrate(set_variables.CONSUMER_KEY, set_variables.CONSUMER_SECRET, set_variables.ACCESS_KEY, set_variables.ACCESS_SECRET):
     iterable=cleanup(loadquotes(set_variables.link, set_variables.pages))
     while len(iterable)>0:
@@ -66,5 +64,7 @@ def __main__:
         time.sleep(random.randrange(set_variables.min_delay, set_variables.max_delay))
         if len(iterable[n]==1:
                iterable=cleanup(loadquotes(set_variables.link, set_variables.pages))
-               
-"""
+
+if __name__ == "__main__":
+    main()
+
